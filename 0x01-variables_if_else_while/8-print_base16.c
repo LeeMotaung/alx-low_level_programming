@@ -1,3 +1,4 @@
+
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -8,12 +9,18 @@
 */
 int main(void)
 {
-char lowercase = 'a';
-while (lowercase <= 'z')
-if ((lowercase != 'e' && lowercase != 'q') && lowercase <= 'z')
+int num;
+char b = 'a';
+num = 0;
+while (num < 10)
 {
-putchar(lowercase);
-lowercase++;
+putchar(num + '0');
+num++;
+}
+while (b <= 'f')
+{
+putchar(b);
+b++;
 }
 putchar('\n');
 return (0);
