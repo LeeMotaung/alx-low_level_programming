@@ -8,12 +8,13 @@
 */
 int main(void)
 {
-char lowercase = 'a';
-while (lowercase <= 'z')
-if ((lowercase != 'e' && lowercase != 'q') && lowercase <= 'z')
+char i;
+for (i = 0; i < 10; i++)
 {
-putchar(lowercase);
-lowercase++;
+if (i != 'q' && i != 'e')
+{
+putchar(i);
+}
 }
 putchar('\n');
 return (0);
